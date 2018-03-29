@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>New York API</title>
+</head>
+<body>
+    <div id="title"></div>
+      <div class="jumbotron text-center">
+        <h1>New York Times Search</h1>
+      </div>        
+
+    <div class="parameters">Search Parameters</div>
+    <form action="/action_page.php">
+    <div id="search term">Search Term: </div>
+          <input type="text" id="term">
+       <div id="records">Number of Records to Retrieve</div>
+           <select id="num" name="retrieve">
+               <option value="1">1</option>
+               <option value="5">5</option>
+               <option value="10">10</option>
+           </select>
+        <div id="start">Start Year (Optional): </div>
+            <input type="text" id="sYear">
+         <div id="end">End Year (Optional): </div>
+            <input type="text" id="eYear">
+            <input type="submit" value="Search">
+            <input type="submit" value="Clear Results">
+    </div>
+    <div class="articles">Top Articles</div>
+    </form>
+  </div> 
+</body>
+</html>
