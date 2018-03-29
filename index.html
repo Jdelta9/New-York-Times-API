@@ -9,24 +9,28 @@
    <div id="title"></div>
      <div class="jumbotron text-center">
        <h1>New York Times Search</h1>
-         </div>        
+     </div>        
 
    <div class="parameters">Search Parameters</div>
-     <div id="search term">Search Term: </div>
+   <form action="/action_page.php">
+   <div id="search term">Search Term: </div>
+         <input type="text" id="term">
       <div id="records">Number of Records to Retrieve</div>
+          <select id="num" name="retrieve">
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
        <div id="start">Start Year (Optional): </div>
+           <input type="text" id="sYear">
         <div id="end">End Year (Optional): </div>
+           <input type="text" id="eYear">
+           <input type="submit" value="Search">
+           <input type="submit" value="Clear Results">
    </div>
-
-   <button id="search" class="btn-lg">Search</button>
-   <button id="clear" class="btn2">Clear Results</button>
    <div class="articles">Top Articles</div>
-   
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-   <script type="text/javascript" src="stopwatch.js"></script>
-   
+   </form>
+ </div> 
 </body>
 </html>
-
 

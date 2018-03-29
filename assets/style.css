@@ -1,111 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <link rel="stylesheet" href="style.css">
-   <title>New York API</title>
-</head>
-<body>
-   <div id="title"></div>
-     <div class="jumbotron text-center">
-       <h1>New York Times Search</h1>
-     </div>        
-
-   <div class="parameters">Search Parameters</div>
-   <form action="/action_page.php">
-   <div id="search term">Search Term: </div>
-         <input type="text" id="term">
-      <div id="records">Number of Records to Retrieve</div>
-          <select id="num" name="retrieve">
-              <option value="1">1</option>
-              <option value="5">5</option>
-              <option value="10">10</option>
-          </select>
-       <div id="start">Start Year (Optional): </div>
-           <input type="text" id="sYear">
-        <div id="end">End Year (Optional): </div>
-           <input type="text" id="eYear">
-           <input type="submit" value="Search">
-           <input type="submit" value="Clear Results">
-   </div>
-   <div class="articles">Top Articles</div>
-   </form>
- </div> 
-</body>
-</html>
-
 body {
-   position: relative;
+    position: relative;
 }
 .jumbotron {
-   width: 80%;
-   padding: 12px 20px;
-   margin: 8px 0;
-   display: inline-block;
-   color: white;
-   border-radius: 4px;
-   box-sizing: border-box;
-   background: rgb(41, 53, 85);
-   text-align: center;
-   font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgb(41, 53, 85);
+    text-align: center;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .parameters {
-   width: 80%;
-   padding: 10px 10px;
-   margin: 40px 0;
-   display: inline-block;
-   color: white;
-   border-radius: 4px;
-   box-sizing: border-box;
-   background: rgb(51, 58, 70);
-   font-size: 18px;
-   font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    padding: 10px 10px;
+    margin: 40px 0;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgb(51, 58, 70);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type=text], select {
-   width: 80%;
-   padding: 12px 20px;
-   margin: 8px 0;
-   margin-right: 195px;
-   display: inline-block;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 195px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type=submit] {
-   background-color: rgb(125, 147, 151);
-   color: white;
-   padding: 14px 20px;
-   margin: 8px 0;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
-   font-size: 15px;
+    background-color: rgb(125, 147, 151);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 input[type=submit]:hover {
-   background-color: rgb(90, 111, 131);
+    background-color: rgb(90, 111, 131);
 }
 
 div {
-   border-radius: 5px;
-   padding: 10px;
-   font-size: 15px;
-   font-family: Arial, Helvetica, sans-serif;
-}
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
 
 .articles {
-   width: 80%;
-   padding: 10px 10px;
-   margin: 35px 0;
-   display: inline-block;
-   color: white;
-   border-radius: 4px;
-   box-sizing: border-box;
-   background: rgb(51, 58, 70);
-   font-size: 18px;
-   font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    padding: 10px 10px;
+    margin: 35px 0;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgb(51, 58, 70);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
